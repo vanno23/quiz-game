@@ -1,0 +1,19 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+
+}
+
+body{
+  background-color: #e8fafb;
+}
+@import './mixin';
+@import './variables';
+@import './font';
+@import './media';
+@import './components/Category';
+@import './components/Difficulty';
+@import './components/Quiz'

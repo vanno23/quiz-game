@@ -1,0 +1,35 @@
+.difficulty{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 100px;
+
+    .difficultyContainer {
+        @include Each-container;
+        .difficultyItem{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            height: 130px;
+            button {
+                @include button;
+                text-transform: capitalize;
+                &.active{
+                    background-color: $blue;
+                }
+            }
+        }
+    }
+
+    .nextContainer{
+        display: flex;
+        justify-content: center;
+        margin-top: 50px;
+        .next{
+            @include next-button;
+        }
+    }
+}
